@@ -1,0 +1,27 @@
+.progress-bar {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.step-two, .step-one {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.step-one {
+    background-color: chartreuse;
+}
+
+.step-two {
+    background-color: #ededed;
+}
+
+.line {
+    border-top: 4px solid #ededed;
+    flex: auto;
+    height: 0;
+    min-width: 32px;
+    margin: 18px -20px 0 -20px;
+}

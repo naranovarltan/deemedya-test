@@ -1,0 +1,40 @@
+<app-progress-bar [step]="step"></app-progress-bar>
+<section>
+  <form
+    fxLayout
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    fxLayoutGap="10px"
+    #formStepOne="ngForm"
+    (ngSubmit)="onSubmit(formStepOne)">
+    <mat-form-field>
+      <input
+        type="email"
+        matInput
+        placeholder="Your name"
+        ngModel
+        name="userName"
+        required>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        type="text"
+        matInput
+        placeholder="Your age"
+        ngModel
+        name="userAge"
+        required>
+    </mat-form-field>
+    <mat-radio-group>
+      <mat-radio-button
+        name="male"
+        value="Male" 
+        checked>Male</mat-radio-button>
+      <mat-radio-button
+        name="female"
+        value="Female"
+      >Female</mat-radio-button>
+    </mat-radio-group>
+    <button type="submit" mat-raised-button color="primary" [disabled]="formStepOne.invalid">Next step</button>
+  </form>
+</section>

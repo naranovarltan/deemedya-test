@@ -1,0 +1,32 @@
+<div 
+  class="progress-bar"
+  fxLayout
+  fxLayoutAlign="center center">
+  <div 
+    fxLayout="column"
+    fxLayoutAlign="center center">
+    <span>Step One</span>
+    <div 
+      appProgress
+      class="step-one"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      #stepOne>
+    <span *ngIf='step == 1'>1</span>
+    <span *ngIf='step !== 1'>✔</span>
+  </div>
+  </div>
+  <div class="line" #line></div>
+  <div
+    fxLayout="column"
+    fxLayoutAlign="center center">
+    <span>Step Two</span>
+    <div
+      class="step-two"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      #stepTwo>
+      2
+    </div>
+  </div>
+</div>
